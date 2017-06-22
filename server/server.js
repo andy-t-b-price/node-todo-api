@@ -45,15 +45,7 @@ app.get('/todos/:id', (req, res)=> {
         res.send({todo});
     }, (e) => {
         res.status(400).send();
-    })
-
-
-    //validate ID using is valid
-
-    //respond with 404 - send back empty body 
-
-    //findById inc error 400 - nothing
-
+    });
 
 }, (e)=> {
     console.log(e);
